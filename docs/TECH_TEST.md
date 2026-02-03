@@ -37,10 +37,15 @@ Key places to look:
    ```
 5. Optional: collect a baseline benchmark
    ```bash
-   php artisan app:bench:purchasable --samples=100 --random=1
+   php artisan app:bench:purchasable --samples=10 --random=1
    # Deterministic over specific IDs
-   php artisan app:bench:purchasable --samples=50 --product-ids=1,2,3,4,5 --random=0 --json=1
+   php artisan app:bench:purchasable --samples=5 --product-ids=1,2,3,4,5 --random=0 --json=1
    ```
+6. Seed a large dataset to simulate more realistic scenarios:
+   ```bash
+   php artisan app:seed --size=full
+   ```
+7. If your setup is correct, you'll like see a speed of many seconds (10-30s) when retrieving the `purchasable` for a product.
 
 ## Task
 1. Profile the calculation path for `purchasable`.
