@@ -56,7 +56,7 @@ Key places to look:
 ## What to submit
 - Ensure you regularly commit your work, so we can review your progress at the end and see any decision making.
 - Create a pull request and give us access to your private fork.
-- A short write‑up (markdown is fine) that includes:
+- A short write‑up (markdown is fine) or video explainer that includes:
   - Problem analysis (what’s slow and why),
   - Your approach and trade‑offs,
   - Before/after timings (endpoint and/or performance test),
